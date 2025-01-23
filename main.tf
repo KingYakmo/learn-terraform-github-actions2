@@ -11,10 +11,10 @@ provider "aws" {
 terraform {
 
   cloud {
-    organization = "FlemingFriday"
+    organization = "yakmo-pipeline"
 
     workspaces {
-      name = "learn-terraform-github-actions"
+      name = "learn-terraform-github-actions2"
     }
   }
 
@@ -33,8 +33,8 @@ resource "aws_vpc" "app1" {
   tags = {
     Name    = "app1"
     Service = "application1"
-    Owner   = "Chewbacca"
-    Planet  = "Mustafar"
+    Owner   = "KingYakmo"
+    Planet  = "SaiyanStarship"
   }
 }
 
